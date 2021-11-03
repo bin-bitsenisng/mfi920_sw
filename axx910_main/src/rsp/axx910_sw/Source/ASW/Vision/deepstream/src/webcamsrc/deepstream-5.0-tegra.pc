@@ -1,0 +1,8 @@
+sources=/opt/nvidia/deepstream/deepstream-5.0/sources
+libdir=/opt/nvidia/deepstream/deepstream-5.0/lib/
+
+Name: libnvds
+Description: deepstream-5.0 tegra
+Version: 5.0
+Cflags: -DPLATFORM_TEGRA -I${sources}/includes -I${sources}/apps/apps-common/includes
+Libs: -L${libdir} -lnvdsgst_meta -lnvds_meta -lnvbufsurface -Wl,-rpath,${libdir} -lgstapp-1.0

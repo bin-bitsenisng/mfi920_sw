@@ -1,0 +1,20 @@
+main.c: 
+
+    g_main_context_new() in g_thread
+    - MainLoop: GMainLoop
+    - ThreadLoop: g_thread from g_main_loop_new()
+
+
+main_with_while_loop.c (what we want):
+
+    g_main_context_default() in main thread
+    - MainLoop: while loop
+    - ThreadLoop: g_thread from g_main_loop_new()
+
+
+videotestsrcsink.c:
+
+    good
+
+
+

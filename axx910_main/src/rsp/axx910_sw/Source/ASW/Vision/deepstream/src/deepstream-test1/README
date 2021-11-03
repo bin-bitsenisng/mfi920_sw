@@ -1,0 +1,2 @@
+./deepstream-test1-app /home/heron/deepstream-5.0/samples/streams/sample_720p.h264                                                 
+gst-launch-1.0 playbin uri=file:///home/heron/deepstream/deepstream-5.0/samples/streams/sample_720p.h264

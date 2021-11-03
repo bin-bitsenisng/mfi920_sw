@@ -1,0 +1,3 @@
+https://gstreamer.freedesktop.org/documentation/tutorials/basic/dynamic-pipelines.html?gi-language=c
+
+Exercise에서 video pad type도 video/x-raw을 쓸 수 있다.

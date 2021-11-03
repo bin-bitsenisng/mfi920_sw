@@ -1,0 +1,16 @@
+
+file_uri=/your/path/to/deepstream_samples/samples/streams/sample_720p.h264
+
+# gstreamer playbin example
+gst-launch-1.0 playbin uri=file://$file_uri
+
+
+# use my source
+make
+./nvplayh264 $file_uri
+
+
+# references
+https://medium.com/@petehouston/play-raw-h264-files-using-gstreamer-1be1f8695186
+https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvvideoconvert.html
+https://gstreamer.freedesktop.org/documentation/tutorials/playback/playbin-usage.html?gi-language=c

@@ -1,0 +1,3 @@
+[submodule "axx910_main/src/rsp/axx910_sw/Source/ASW/Vision/tensorrt"]
+	path = axx910_main/src/rsp/axx910_sw/Source/ASW/Vision/tensorrt
+	url = git@github.com:bitsensing/tensorrt.git

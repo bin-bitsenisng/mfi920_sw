@@ -1,0 +1,5 @@
+./export_raw.sh
+ln -s ~/deepstream-5.0/sources/objectDetector_Yolo/nvdsinfer_custom_impl_Yolo
+make && ./run.sh
+
+see also deepstream-5.0/sources/apps/sample_apps/deepstream-appsrc-test/README.

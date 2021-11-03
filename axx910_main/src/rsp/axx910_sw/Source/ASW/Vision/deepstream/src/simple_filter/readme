@@ -1,0 +1,7 @@
+https://gstreamer.freedesktop.org/documentation/tutorials/basic/concepts.html?gi-language=c
+
+./build.sh
+
+# CAUTION
+"simple_filter" binary doesn't work, (works in mac os x)
+run "simple_filter_without_filter" instead.

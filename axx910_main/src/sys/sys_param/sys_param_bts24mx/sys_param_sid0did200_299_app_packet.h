@@ -1,0 +1,97 @@
+/******************************************************************/
+/* SID:0x00, DID:200~299 Application Service setup  */
+/******************************************************************/
+/******************************************************************/
+/* SID:0x00, DID:200 application packet setup  */
+/******************************************************************/
+{
+    /*.sid =*/0,
+    /*.did =*/200,
+    /*.setup*/
+    {
+        /*.count=*/4,
+        /*.ports[]=*/
+        {
+            {
+            	/*server_ip=*/"127.0.0.1",
+                /*port_num=*/4546,
+                /*port_en=*/0,
+				/*client_mode_en=*/1, // 0: server, 1: client
+				/*pid_simple_en=*/0,
+				/*pid_compress_en=*/0,
+                /*pid_status_en=*/1,
+                /*pid_object_en=*/1,
+                /*pid_track_en=*/1,
+                /*pid_image_en=*/1,
+                /*pid_imagsp_en=*/0,
+                /*pid_logger_en=*/0,
+                /*pid_canlog_en=*/0,
+                /*pid_sensor_en=*/0,
+                /*pid_app_its_en=*/0,
+                /*pid_app_vf_en=*/0,
+                /*pid_app_fcw_en=*/0,
+                /*pid_app_lm_en=*/0,
+            },
+            {
+                /*server_ip=*/"127.0.0.1",
+                /*port_num=*/4547,
+                /*port_en=*/0,
+				/*client_mode_en=*/1, // 0: server, 1: client
+				/*pid_simple_en=*/0,
+				/*pid_compress_en=*/0,
+                /*pid_status_en=*/1,
+                /*pid_object_en=*/1,
+                /*pid_track_en=*/1,
+                /*pid_image_en=*/1,
+                /*pid_imagsp_en=*/0,
+                /*pid_logger_en=*/0,
+                /*pid_canlog_en=*/0,
+                /*pid_sensor_en=*/0,
+                /*pid_app_its_en=*/0,
+                /*pid_app_vf_en=*/0,
+                /*pid_app_fcw_en=*/0,
+                /*pid_app_lm_en=*/0,
+            },
+            {
+                /*server_ip=*/"127.0.0.1",
+                /*port_num=*/4548,
+                /*port_en=*/0,
+				/*client_mode_en=*/1, // 0: server, 1: client
+				/*pid_simple_en=*/0,
+				/*pid_compress_en=*/0,
+                /*pid_status_en=*/1,
+                /*pid_object_en=*/1,
+                /*pid_track_en=*/1,
+                /*pid_image_en=*/1,
+                /*pid_imagsp_en=*/0,
+                /*pid_logger_en=*/0,
+                /*pid_canlog_en=*/0,
+                /*pid_sensor_en=*/0,
+                /*pid_app_its_en=*/0,
+                /*pid_app_vf_en=*/0,
+                /*pid_app_fcw_en=*/0,
+                /*pid_app_lm_en=*/0,
+            },
+            {
+                /*server_ip=*/"127.0.0.1",
+                /*port_num=*/4549,
+                /*port_en=*/0,
+				/*client_mode_en=*/1, // 0: server, 1: client
+				/*pid_simple_en=*/0,
+				/*pid_compress_en=*/0,
+                /*pid_status_en=*/1,
+                /*pid_object_en=*/1,
+                /*pid_track_en=*/1,
+                /*pid_image_en=*/1,
+                /*pid_imagsp_en=*/0,
+                /*pid_logger_en=*/0,
+                /*pid_canlog_en=*/0,
+                /*pid_sensor_en=*/0,
+                /*pid_app_its_en=*/0,
+                /*pid_app_vf_en=*/0,
+                /*pid_app_fcw_en=*/0,
+                /*pid_app_lm_en=*/0,
+            },
+        },
+    },
+},

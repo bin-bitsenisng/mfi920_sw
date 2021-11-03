@@ -1,0 +1,56 @@
+Enable google spreadsheet api
+
+https://developers.google.com/sheets/api/quickstart/python
+
+# cut mp4 (error in h264)
+ffmpeg -ss 0 -i ~/deepstream_tlt_apps/front.mp4 -t 10 -c copy ../samples/front_10s.h264
+# convert to h264
+ffmpeg -i ../samples/front_10s.mp4 ../samples/front_10s.h264 
+
+tegrastats
+https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2FAppendixTegraStats.html%23wwpID0E0GB0HA
+
+
+
+
+
+./prepare_config.sh <configs dir> <exp param list> 
+./build_engine.sh <engines dir> <configs dir>
+./run.sh <exp ret dir> <configs dir>
+
+models/
+models/etlt/
+
+exp/[name]/model_precision_tracker
+exp/[name]/etlt/model_precision_tracker
+
+
+
+
+type 1
+- weights, cfg
+- precision
+- engine
+- tracker
+
+
+type 2
+- etlt
+- precision
+- engine
+- (cal.bin)
+- gpu / dla
+- tracker
+
+
+ 
+gst-launch-1.0 filesrc location=file://data/front.mp4 ! \
+    qtdemux ! h264parse ! nvv4l2decoder ! \
+    m.sink_0 nvstreammux name=m batch-size=1 width=1280 height=720 ! \
+    nvinfer config-file-path=MobileNetV2-YOLOv3-Lite-coco_0_gpu_config_infer_primary.txt ! \
+    nvvideoconvert ! filesink location=file://tmp.mp4
+
+    nvvideoconvert ! dsexample full-frame=0 <other-properties> ! nvdsosd ! nvegltransform ! nveglglessink
+
+
+ffprobe $filename # view file info

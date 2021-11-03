@@ -1,0 +1,15 @@
+references: search this keyword at https://gstreamer.freedesktop.org
+- GstApp.AppSink
+- Gst.Sample
+- Gst.Buffer
+- Gst.Caps
+- Gst.Structure
+
+
+./run_py.sh 
+
+
+# force quit
+ctrl+z
+pkill -9 -ef run.py 
+fg

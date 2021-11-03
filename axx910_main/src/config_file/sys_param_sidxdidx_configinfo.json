@@ -1,0 +1,17 @@
+{
+	"sid": 0,
+	"did": 2,
+	"setup": {
+		"misc": {
+			"camera_on": true
+		},
+		"lock_en": 0,
+		"admin_password": "0000",
+		"user_password": "0000",
+		"type": "gps",
+		"latitude": "default",
+		"longitude": "default",
+		"direction": "default"
+	}
+
+}
