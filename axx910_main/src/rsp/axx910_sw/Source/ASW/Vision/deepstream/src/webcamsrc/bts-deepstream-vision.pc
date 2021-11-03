@@ -1,8 +1,0 @@
-includedir=/usr/local/include
-libdir=/usr/local/lib
-
-Name: libbtsdsvis
-Description: Bitsensing deepstream vision library
-Version: 0.0.1
-Cflags: -I${includedir}/bts_deepstream_vision -I${includedir}/bts_deepstream_vision/nvdsinfer_custom_impl_Yolo
-Libs: -L${libdir} -lnvdsinfer_custom_impl_Yolo -lnvdsinfer_custom_impl_Yolo4_marco -lbtscvcopymeta2context -Wl,-rpath,${libdir}

@@ -1,7 +1,0 @@
-
-1. library example binary
-./run_installed_bin.sh
-
-2. library using test
-make
-./run_bin.sh

@@ -1,7 +1,0 @@
-aws
-*.zip
-*.weights
-*.labels
-*.cfg
-*.engine
-*.etlt
